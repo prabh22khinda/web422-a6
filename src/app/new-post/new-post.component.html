@@ -1,0 +1,34 @@
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form #f='ngForm' (ngSubmit)="formSubmit()">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input [(ngModel)]="blogPost.title" name="postTitle" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Featured Image (URL)</label>
+                    <input [(ngModel)]="blogPost.featuredImage" name="postImageUrl" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Post</label>
+                    <textarea [(ngModel)]="blogPost.post" name="postContent" class="form-control"
+                        style="min-height:200px"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <input [(ngModel)]="blogPost.category" name="postCategory" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Tags</label>
+                    <textarea [(ngModel)]="tags" name="postTags" class="form-control"></textarea>
+                </div>
+                <div class="pull-right">
+                    <button type="submit" class="btn btn-success btn-sm">Add Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<br />
