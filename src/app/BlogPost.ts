@@ -1,3 +1,4 @@
+import { Comment } from './comment';
 export class BlogPost {
 	_id: string
 	title: string;
